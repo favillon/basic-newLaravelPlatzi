@@ -45,3 +45,10 @@ Backend para post
 ```shell
 php artisan m:cont Backend/PostController -r --model=Post
 ```
+
+
+Validacion del post de la creacion 
+
+```shell
+php artisan make:request PostRequest
+```
