@@ -52,3 +52,10 @@ Validacion del post de la creacion
 ```shell
 php artisan make:request PostRequest
 ```
+
+
+Creando un enlace simbolico desde storage a public
+
+```shell
+ php artisan storage:link
+```

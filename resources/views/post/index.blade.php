@@ -10,6 +10,13 @@
                     <a href="{{ route('posts.create') }}" class="btn btn-sm btn-primary float-right">Crear</a>
                 </div>
                 <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                </div>
+                <div class="card-body">
                     <table class="table">
                         <thead class="text-center">
                             <tr>

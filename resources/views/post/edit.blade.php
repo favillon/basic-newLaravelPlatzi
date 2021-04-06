@@ -14,12 +14,12 @@
                         </div>
                     @endif
 
-                    <form action="{{ route('posts.update') }}" method="POST"
+                    <form action="{{ route('posts.update', $post) }}" method="POST"
                         enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="title">Titulo *</label>
                             <input type="text" name="title" 
-                                    class="form-control" value="{{ old('title') }}" required>
+                                    class="form-control" value="{{ old('title', $post->title) }}" required>
                         </div>
                         <div class="form-group">
                             <label for="file">Imagen</label>
@@ -27,11 +27,11 @@
                         </div>
                         <div class="form-group">
                             <label for="body">Contenido *</label>
-                            <textarea name="body"  rows="6" class="form-control" required>{{old('body')}}</textarea>
+                            <textarea name="body"  rows="6" class="form-control" required>{{old('body', $post->body)}}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="iframe">Contenido Multimedia</label>
-                            <textarea name="iframe"  rows="6" class="form-control">{{ old('iframe') }}</textarea>
+                            <textarea name="iframe"  rows="6" class="form-control">{{ old('iframe', $post->iframe) }}</textarea>
                         </div>
                         <div class="form-group">
                             @method('PUT')

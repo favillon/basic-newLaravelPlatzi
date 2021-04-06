@@ -41,4 +41,11 @@ class Post extends Model
     {       
         return substr($this->body, 0, 140) . '...';
     }
+
+    public function getRutaImgAttribute()
+    {
+        if ($this->img) {
+            return url('storage/' . $this->img);
+        }   
+    }
 }
