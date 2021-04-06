@@ -59,3 +59,7 @@ Creando un enlace simbolico desde storage a public
 ```shell
  php artisan storage:link
 ```
+
+
+## Resultado del blog
+!(Final)[./public/img/MsccK1oexE.gif]
