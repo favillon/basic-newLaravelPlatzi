@@ -62,4 +62,4 @@ Creando un enlace simbolico desde storage a public
 
 
 ## Resultado del blog
-!(Final)[./public/img/MsccK1oexE.gif]
+![Final](./public/img/MsccK1oexE.gif)
